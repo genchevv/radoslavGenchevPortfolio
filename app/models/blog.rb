@@ -7,7 +7,7 @@ class Blog < ActiveRecord::Base
     
     belongs_to :topic
     
-    def self.special_blogs
+    def self.all_blogs
        all 
     end
 end
