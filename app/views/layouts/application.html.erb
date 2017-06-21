@@ -14,13 +14,15 @@
 <body>
   
   <div class="container text-center">
-    <%= render "shared/application_nav" %>
-    
-    <%= yield %>
-    
-    <%= render "shared/application_footer" %>
-    
-    <%= source_helper("application") %>
+    <div class="inner cover">
+      <%= render "shared/application_nav" %>
+      
+      <%= yield %>
+      
+      <%= render "shared/application_footer" %>
+      
+      <%= source_helper("application") %>
+    </div>
   </div>
       
 </body>
