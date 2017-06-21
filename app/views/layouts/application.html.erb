@@ -12,21 +12,16 @@
   <meta name="keywords" content="<%= @seo_keywords %>" />
 </head>
 <body>
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-        
-        <%= render "shared/application_nav" %>
-        
-        <%= yield %>
-        
-        <%= render "shared/application_footer" %>
-        
-        <%= source_helper("application") %>
-        
-      </div>
-    </div>
+  
+  <div class="container">
+    <%= render "shared/application_nav" %>
+    
+    <%= yield %>
+    
+    <%= render "shared/application_footer" %>
+    
+    <%= source_helper("application") %>
   </div>
-
+      
 </body>
 </html>
