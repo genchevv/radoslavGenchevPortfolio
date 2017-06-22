@@ -85,8 +85,13 @@ body {
   max-width: 330px;
   padding-bottom: 15px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .form-control {
   margin-bottom: 5px;
+}
+
+.auth-links a {
+  color: black;
 }
