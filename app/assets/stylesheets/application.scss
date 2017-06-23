@@ -35,7 +35,7 @@ body {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 55rem;
+    max-width: 53rem;
   }
 }
 .container-narrow > hr {
@@ -102,4 +102,16 @@ body {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    padding-top: 0.2em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
 }
