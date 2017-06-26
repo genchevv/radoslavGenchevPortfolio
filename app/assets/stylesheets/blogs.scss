@@ -5,12 +5,6 @@
  * Globals
  */
 
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
-}
-
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
@@ -35,7 +29,6 @@ h6, .h6 {
 .container {
   max-width: 60rem;
 }
-
 
 /*
  * Masthead for nav
@@ -85,6 +78,7 @@ h6, .h6 {
  */
 
 .blog-header {
+  padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
@@ -158,7 +152,8 @@ h6, .h6 {
  */
 
 .blog-footer {
-  padding: 2.5rem 0;
+      margin-top: 20px;
+    padding: 2.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
@@ -172,6 +167,17 @@ h6, .h6 {
  * Custom styles
  */
  
-.social-links li {
-  font-size: 2.5em;
+.social-links-sidebar {
+  font-size: 2rem;
+}
+
+.social-links a {
+  font-size: 1rem;
+  padding-right: 1%;
+  padding-left: 1%;
+  font-weight: normal;
+}
+
+#navbar-brand {
+      font-size: 1.5rem;
 }
