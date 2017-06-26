@@ -16,20 +16,16 @@
    <%= render "shared/application_nav" %>
    <div class="container">
 
-          <div id="background"></div>
+      <div id="background"></div>
 
-          
+      <%= yield %>
 
-          <%= yield %>
+      <%= render "shared/application_footer" %>
 
-          <%= render "shared/application_footer" %>
+      <%= source_helper("application") %>
 
-          <%= source_helper("application") %>
-
-        </div>
-      </div>
     </div>
-    </div>
+
   
 </body>
 </html>
