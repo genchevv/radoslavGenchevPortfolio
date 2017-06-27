@@ -68,7 +68,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('5940.jpg') no-repeat;
+  background-image: url("cover-background-image-compressed.jpg");
   background-size: cover;
 }
 
@@ -77,7 +77,6 @@ body {
 }
 
 .navbar {
-  margin-bottom: 5em;
   background: transparent;
 }
 
@@ -136,4 +135,9 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
+}
+
+.content {
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
