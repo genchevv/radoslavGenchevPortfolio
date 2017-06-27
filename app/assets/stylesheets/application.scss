@@ -59,18 +59,18 @@ body {
 
 #background {
   position: fixed;
-  display: block;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background: image-url('cover-background-image-compressed.jpg') no-repeat;
-  background-size: cover;
+  background-size:100%;
+  
 }
 
 .app-footer {
