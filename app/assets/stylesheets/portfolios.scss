@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import "jquery-ui";
 
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
 .navbar {
   margin-bottom: 0;
 }

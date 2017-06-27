@@ -31,10 +31,7 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-}
+
 body {
   color: #fff;
   text-align: center;
@@ -117,10 +114,6 @@ body {
   color: #fff !important;
 }
 
-.footer {
-  margin-top: 5em;
-}
-
 .social-links a {
   padding-left: 0.7em;
   padding-right: 0.7em;
@@ -128,4 +121,19 @@ body {
 
 .about-info {
   font-weight: bold;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
