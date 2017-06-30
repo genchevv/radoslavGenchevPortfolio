@@ -128,3 +128,16 @@ footer {
     padding-top: 5em;
     padding-bottom: 5em;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
