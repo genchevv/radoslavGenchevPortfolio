@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '~> 5.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -64,3 +64,6 @@ gem 'cocoon', '~> 1.2', '>= 1.2.10'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'redis', '~> 3.3', '>= 3.3.3'
+gem 'actionpack', '~> 5.0.4'
+gem 'actioncable', '~> 5.0.0'
