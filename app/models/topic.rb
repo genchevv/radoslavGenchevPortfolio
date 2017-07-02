@@ -4,6 +4,6 @@ class Topic < ActiveRecord::Base
     has_many :blogs
     
     def self.with_blogs
-       includes(:blogs).where.not(blogs: { id: nil }) 
+       includes(:blogs).where.not(blogs: { id: nil })
     end
 end
