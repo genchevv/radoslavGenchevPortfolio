@@ -12,4 +12,8 @@ class Blog < ActiveRecord::Base
     def self.all_blogs
        all 
     end
+    
+    def self.recent
+       order("created_at DESC") 
+    end
 end
