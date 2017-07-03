@@ -9,11 +9,11 @@
     <br>
   
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <%= image_tag "profile_image.jpg", width: 200, alt: "profile image", class: 'rounded-circle img-fluid profile-image' %>
       </div>
     
-      <div class="col-md-8 text-left about-info">
+      <div class="col-md-6 about-info">
         <p>I'm</p>
         <ul>
           <li>a wantrepreneur and a full-stack web developer</li>
@@ -24,6 +24,54 @@
           <li>doing charity and voluntary work, because it is a must</li>
         </ul>
       </div>
+        
+        <div class="col-md-3">
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controls="#jobHistory"
+          >
+            Job History
+          </button>
+          
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controls="#jobHistory"
+          >
+            Education
+          </button>
+
+        
+
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+          
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Education 1
+            </div>
+            <div class="card card-block">
+              Education 2
+            </div>
+          </div>
+
+        </div>
+        
+        
     </div>
   </div>
 </div>
