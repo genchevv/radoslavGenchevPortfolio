@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
   
   <title><%= @page_title %></title>
+  
+  <%= favicon_link_tag 'favicons/rg.ico' %>
+  
   <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track' => 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
   <%= csrf_meta_tags %>
@@ -24,8 +27,6 @@
   <%= render 'shared/portfolio_footer' %>
   
   <%= alerts %>
-  
-  <%= source_helper("application") %>
 
 </body>
 </html>

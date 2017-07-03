@@ -3,7 +3,7 @@ class Blog < ActiveRecord::Base
     extend FriendlyId
     friendly_id :title, use: :slugged
     
-    validates_presence_of :title, :body
+    validates_presence_of :title, :body, :topic_id
     
     belongs_to :topic
     
@@ -11,5 +11,9 @@ class Blog < ActiveRecord::Base
     
     def self.all_blogs
        all 
+    end
+    
+    def self.recent
+       order("created_at DESC") 
     end
 end

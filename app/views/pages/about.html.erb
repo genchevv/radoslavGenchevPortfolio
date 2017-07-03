@@ -1,27 +1,90 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1>About Me</h1>
+      </div>
     </div>
-  </div>
+    
+    <br>
   
-  <br>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <%= image_tag "profile_image.jpg", width: 200, alt: "profile image", class: 'rounded-circle img-fluid profile-image' %>
+        
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progress-bar" aria-valuenow="<% skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>%">
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    
+      <div class="col-md-6 about-info">
+        <p>I'm</p>
+        <ul>
+          <li>a wantrepreneur and a full-stack web developer</li>
+          <li>doing my best to write clean and efficient code in order to create beautiful apps</li>
+          <li>constantly thinking of new ideas</li>
+          <li>always trying to define problems and corresponding solutions to them</li>
+          <li>also really passionate about launching startups, creating meaningful and valuable products, which can enrich the people around us</li>
+          <li>doing charity and voluntary work, because it is a must</li>
+        </ul>
+      </div>
+        
+        <div class="col-md-3 text-center">
 
-  <div class="row">
-    <div class="col-md-4">
-      <%= image_tag "profile_image.jpg", width: 200, alt: "profile image", class: 'rounded-circle img-fluid' %>
-    </div>
-  
-    <div class="col-md-8 text-left about-info">
-      <p>I'm</p>
-      <ul>
-        <li>a wantrepreneur and a full-stack web developer</li>
-        <li>doing my best to write clean and efficient code in order to create beautiful apps</li>
-        <li>constantly thinking of new ideas</li>
-        <li>always trying to define problems and corresponding solutions to them</li>
-        <li>also really passionate about launching startups, creating meaningful and valuable products, which can enrich the people around us</li>
-        <li>doing charity and voluntary work, because it is a must</li>
-      </ul>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controls="#jobHistory"
+          >
+            Job History
+          </button>
+          
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controls="#jobHistory"
+          >
+            Education
+          </button>
+
+        
+
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+          
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Education 1
+            </div>
+            <div class="card card-block">
+              Education 2
+            </div>
+          </div>
+
+        </div>
+        
+        
     </div>
   </div>
 </div>
+  
