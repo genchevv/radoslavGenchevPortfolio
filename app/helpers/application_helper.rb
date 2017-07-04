@@ -5,7 +5,7 @@ module ApplicationHelper
             " ".html_safe +
             "<span><a href='#{new_user_session_path}' class='#{style} #{active? new_user_session_path}'>Login</a></span>".html_safe
         else
-            "<span><a href='#{destroy_user_session_path}' data-method='delete' class='#{style} #{active? destroy_user_session_path}'>Logout</a></span>".html_safe
+            "<span><a href='#{destroy_user_session_path}' data-method='#{Rails.env.production? ? 'get' : 'delete'}' class='#{style} #{active? destroy_user_session_path}'>Logout</a></span>".html_safe
         end 
     end
     
