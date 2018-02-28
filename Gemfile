@@ -70,5 +70,3 @@ gem 'actionpack', '~> 5.0.4'
 gem 'actioncable', '~> 5.0.0'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
-
-ruby '2.3.0' 
